@@ -15,7 +15,7 @@ body{
   overflow-x:hidden;
 }
 
-/* HERO SECTION */
+/* HERO */
 
 .hero{
   height:100vh;
@@ -70,7 +70,7 @@ body{
   transform:translateY(-3px);
 }
 
-/* ABOUT SECTION */
+/* ABOUT */
 
 .about{
   padding:100px 10%;
@@ -277,7 +277,17 @@ body{
   border-radius:12px;
 }
 
-/* MOBILE RESPONSIVE */
+/* SEO FOOTER */
+
+.seo-footer{
+  padding:40px;
+  text-align:center;
+  color:#777;
+  font-size:14px;
+  background:#111;
+}
+
+/* MOBILE */
 
 @media(max-width:768px){
 
