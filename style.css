@@ -1,0 +1,301 @@
+/* RESET */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* BODY */
+
+body{
+  font-family:Arial, sans-serif;
+  background:#111;
+  color:white;
+  overflow-x:hidden;
+}
+
+/* HERO SECTION */
+
+.hero{
+  height:100vh;
+
+  background:
+  linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+  url("shop-interior.jpg");
+
+  background-size:cover;
+  background-position:center;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+
+  padding:20px;
+}
+
+.hero-content h1{
+  font-size:75px;
+  margin-bottom:20px;
+}
+
+.hero-content p{
+  font-size:24px;
+  margin-bottom:35px;
+  color:#ddd;
+}
+
+/* BUTTON */
+
+.btn{
+  display:inline-block;
+
+  background:gold;
+  color:black;
+
+  text-decoration:none;
+
+  padding:15px 40px;
+
+  border-radius:6px;
+
+  font-weight:bold;
+
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:white;
+  transform:translateY(-3px);
+}
+
+/* ABOUT SECTION */
+
+.about{
+  padding:100px 10%;
+  background:#181818;
+}
+
+.about h2{
+  font-size:42px;
+  color:gold;
+  margin-bottom:30px;
+}
+
+.about p{
+  max-width:800px;
+  line-height:1.8;
+  color:#ddd;
+  margin-bottom:20px;
+}
+
+/* SERVICES */
+
+.services{
+  padding:100px 10%;
+  text-align:center;
+}
+
+.services h2{
+  font-size:42px;
+  color:gold;
+  margin-bottom:60px;
+}
+
+.service-grid{
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit, minmax(250px,1fr));
+
+  gap:30px;
+}
+
+.card{
+  background:#1f1f1f;
+
+  padding:40px;
+
+  border-radius:12px;
+
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+.card h3{
+  color:gold;
+  margin-bottom:15px;
+  font-size:26px;
+}
+
+.card p{
+  color:#ccc;
+  line-height:1.6;
+}
+
+/* GALLERY */
+
+.gallery{
+  padding:100px 10%;
+  background:#181818;
+}
+
+.gallery h2{
+  text-align:center;
+  font-size:42px;
+  color:gold;
+  margin-bottom:60px;
+}
+
+.gallery-grid{
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit, minmax(250px,1fr));
+
+  gap:20px;
+}
+
+.gallery-grid img{
+  width:100%;
+  height:350px;
+
+  object-fit:cover;
+
+  border-radius:12px;
+
+  transition:0.3s;
+}
+
+.gallery-grid img:hover{
+  transform:scale(1.05);
+}
+
+/* HOURS */
+
+.hours{
+  padding:100px 10%;
+  text-align:center;
+}
+
+.hours h2{
+  font-size:42px;
+  color:gold;
+  margin-bottom:50px;
+}
+
+.hours-box{
+  background:#1f1f1f;
+
+  max-width:700px;
+
+  margin:auto;
+
+  padding:40px;
+
+  border-radius:12px;
+}
+
+.hour-row{
+  display:flex;
+  justify-content:space-between;
+
+  padding:15px 0;
+
+  border-bottom:1px solid #333;
+}
+
+.hour-row:last-child{
+  border-bottom:none;
+}
+
+.closed{
+  color:#777;
+}
+
+/* CONTACT */
+
+.contact{
+  padding:100px 10%;
+  background:#181818;
+}
+
+.contact h2{
+  text-align:center;
+  font-size:42px;
+  color:gold;
+  margin-bottom:60px;
+}
+
+.contact-box{
+  display:grid;
+
+  grid-template-columns:1fr 2fr;
+
+  gap:30px;
+}
+
+.info{
+  background:#1f1f1f;
+
+  padding:40px;
+
+  border-radius:12px;
+}
+
+.info h3{
+  color:gold;
+  margin-bottom:20px;
+  font-size:28px;
+}
+
+.info p{
+  color:#ddd;
+  line-height:1.8;
+  margin-bottom:15px;
+}
+
+/* PHONE LINK */
+
+.info a{
+  color:gold;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.info a:hover{
+  color:white;
+}
+
+/* MAP */
+
+.map iframe{
+  border-radius:12px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width:768px){
+
+  .hero-content h1{
+    font-size:48px;
+  }
+
+  .hero-content p{
+    font-size:18px;
+  }
+
+  .contact-box{
+    grid-template-columns:1fr;
+  }
+
+  .hour-row{
+    flex-direction:column;
+    gap:5px;
+  }
+
+}
